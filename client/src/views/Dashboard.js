@@ -7,8 +7,8 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Toast from 'react-bootstrap/Toast';
-// import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-// import Tooltip from 'react-bootstrap/Tooltip';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
 import SinglePost from '../components/posts/SinglePost';
 import AddPostModal from '../components/posts/AddPostModal';
 import UpdatePostModal from '../components/posts/UpdatePostModal';
@@ -70,17 +70,17 @@ const Dashboard = () => {
         </Row>
 
         {/* Show modal */}
-        {/* <OverlayTrigger
+        <OverlayTrigger
           placement="left"
           overlay={<Tooltip>Add a new thing to learn</Tooltip>}
-        > */}
+        >
         <Button
           className="btn-floating"
           onClick={() => setShowAddPostModal(true)}
         >
           <img src={addIcon} alt="show modal" width="60" height="60" />
         </Button>
-        {/* </OverlayTrigger> */}
+        </OverlayTrigger>
       </>
     );
   }

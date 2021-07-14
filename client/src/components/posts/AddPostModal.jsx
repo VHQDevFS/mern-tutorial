@@ -41,7 +41,7 @@ const AddPostModal = () => {
   }
 
   return (
-    <Modal show={showAddPostModal} animation={false} onHide={resetAddPostData}>
+    <Modal show={showAddPostModal} onHide={resetAddPostData}>
       <Modal.Header closeButton={resetAddPostData}>
         <Modal.Title>What do you want to learn?</Modal.Title>
       </Modal.Header>
