@@ -1,0 +1,33 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "viet2",
+  "password": "viet"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "viet2",
+  "password": "viet"
+}
+
+###
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGVkYjk5MGU5ZGE5MTM3MzRhOTQ3ZTIiLCJpYXQiOjE2MjYyNTcxNjJ9.9BipfZkNb4tU3TVXFEiY1SC3YWr6KwkqZzyw2xLTO4s
+
+
+{
+ "title": "my seventh post",
+  "description": "learn code web",
+  "url": "google.com",
+  "status": "LEARNING"
+}
+
+###
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGVkYjk5MGU5ZGE5MTM3MzRhOTQ3ZTIiLCJpYXQiOjE2MjYyNTU5NjB9.nzRr4TGgX51oZDAosM6JFw5rA1d2uNR9elPN0LArTXs
